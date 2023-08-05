@@ -1,3 +1,4 @@
+from io import BytesIO
 from time import sleep
 import os
 import requests
@@ -32,7 +33,7 @@ class NasaImageDownloader:
         self.params = params
         self.max_retries = max_retries
 
-    def get_image(self) -> bytes:
+    def get_image(self) -> BytesIO:
         if not self.params.date:
             self.params.date = datetime.now().strftime(r'%Y-%m-%d')
 
@@ -49,8 +50,8 @@ class NasaImageDownloader:
             try:
                 response = requests.get(self.base_url, params=payload, stream=True)
                 response.raise_for_status()
-                binary_data = response.content
-                return binary_data
+                image_stream = BytesIO(response.content)
+                return image_stream
             
             except requests.exceptions.RequestException:
                 retries += 1
