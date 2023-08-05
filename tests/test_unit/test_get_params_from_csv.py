@@ -2,7 +2,7 @@ from datetime import datetime
 import unittest
 from unittest.mock import patch
 from src.services.nasa_image_downloader import NasaImageParameters
-from src.utils.get_params_from_csv import read_csv_and_parse_params
+from src.utils.get_params_from_csv import FieldInfo, read_csv_and_parse_params
 
 class TestCSVParser(unittest.TestCase):
 
@@ -23,15 +23,15 @@ class TestCSVParser(unittest.TestCase):
 
         # Assert the expected results
         expected_params = [
-            {
-                'field_id': 'field1', 
-                'params': NasaImageParameters(lat=20.0, lon=10.0, dim=0.1),
-                'bucket_folder': f"field1/{datetime.now().strftime(r'%Y-%m-%d')}_imagery.png"
-            },
-            {
-                'field_id': 'field2',
-                'params': NasaImageParameters(lat=25.0, lon=15.0, dim=0.2),
-                'bucket_folder': f"field2/{datetime.now().strftime(r'%Y-%m-%d')}_imagery.png"
-            }
+            FieldInfo(
+                field_id='field1',
+                params=NasaImageParameters(lat=20.0, lon=10.0, dim=0.1),
+                bucket_path=f"field1/{datetime.now().strftime(r'%Y-%m-%d')}_imagery.png"
+            ),
+            FieldInfo(
+                field_id='field2',
+                params=NasaImageParameters(lat=25.0, lon=15.0, dim=0.2),
+                bucket_path=f"field2/{datetime.now().strftime(r'%Y-%m-%d')}_imagery.png"
+            )
         ]
         self.assertEqual(parsed_params, expected_params)
