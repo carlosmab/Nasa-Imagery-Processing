@@ -1,6 +1,6 @@
 from io import BytesIO
 import unittest
-from unittest.mock import patch, Mock
+from unittest.mock import create_autospec, patch, Mock
 from src.services.nasa_image_downloader import ImageRequestError, NasaImageDownloader, NasaImageParameters
 
 class TestNasaImageDownloader(unittest.TestCase):
@@ -11,22 +11,21 @@ class TestNasaImageDownloader(unittest.TestCase):
         mock_response.content = b'Simulated Binary Data'
         mock_get.return_value = mock_response
 
-        api_key = 'your-api-key'
         params = NasaImageParameters(lat=40.7128, lon=-74.0060)
-        nasa_downloader = NasaImageDownloader(api_key, params)
+        nasa_downloader = NasaImageDownloader(params)
         image_stream = nasa_downloader.get_image()
         
         expected_content = b'Simulated Binary Data'
+        self.assertIsInstance(image_stream, BytesIO)
         self.assertEqual(image_stream.read(), expected_content)
+        
         
     @patch('requests.get')
     def test_get_image_handles_error(self, mock_get):
         mock_get.return_value.raise_for_status.side_effect = ImageRequestError("Error fetching image")
-
         
-        api_key = 'your-api-key'
         params = NasaImageParameters(lat=40.7128, lon=-74.0060)
-        nasa_downloader = NasaImageDownloader(api_key, params)
+        nasa_downloader = NasaImageDownloader(params)
 
         with self.assertRaises(ImageRequestError):
             nasa_downloader.get_image()
@@ -42,11 +41,12 @@ class TestNasaImageDownloader(unittest.TestCase):
         ]
         mock_get.side_effect = responses
 
-        api_key = 'your-api-key'
         params = NasaImageParameters(lat=40.7128, lon=-74.0060)
-        nasa_downloader = NasaImageDownloader(api_key, params, max_retries=4)
+        nasa_downloader = NasaImageDownloader(params, max_retries=4)
         binary_image_data = nasa_downloader.get_image()
 
         self.assertIsNotNone(binary_image_data)
+        
+    
         
 

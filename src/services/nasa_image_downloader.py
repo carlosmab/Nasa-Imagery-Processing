@@ -2,7 +2,9 @@ from io import BytesIO
 from time import sleep
 import os
 import requests
-from dataclasses import dataclass
+import aiohttp
+from aiohttp_retry import RetryClient, ExponentialRetry
+from dataclasses import asdict, dataclass
 from datetime import datetime
 
 from dotenv import load_dotenv
@@ -11,11 +13,10 @@ load_dotenv()
 
 @dataclass
 class NasaImageParameters:
-    lat: float
-    lon: float
-    date: str | None = None
+    lat: float = 0.0
+    lon: float = 0.0
+    date: str = datetime.now().strftime(r'%Y-%m-%d')
     dim: float = 0.15
-    info: bool = False
 
 
 class ImageRequestError(Exception):
@@ -27,9 +28,9 @@ class ImageRequestError(Exception):
 class NasaImageDownloader:
     RETRY_DELAY_SECS = 1
 
-    def __init__(self, api_key: str, params: NasaImageParameters, max_retries: int = 3):
+    def __init__(self, params: NasaImageParameters, api_key: str = "DEMO_KEY", max_retries: int = 3):
         self.api_key = api_key
-        self.base_url = os.getenv('NASA_BASE_URL', "")
+        self.base_url = os.getenv('NASA_EARTH_IMAGERY_API_URL', "")
         self.params = params
         self.max_retries = max_retries
 
@@ -37,14 +38,9 @@ class NasaImageDownloader:
         if not self.params.date:
             self.params.date = datetime.now().strftime(r'%Y-%m-%d')
 
-        payload = {
-            'lat': self.params.lat,
-            'lon': self.params.lon,
-            'date': self.params.date,
-            'dim': self.params.dim,
-            'api_key': self.api_key,
-        }
-
+        payload = asdict(self.params)
+        payload["api_key"] = self.api_key
+            
         retries = 0
         while retries < self.max_retries:
             try:
@@ -58,3 +54,23 @@ class NasaImageDownloader:
                 sleep(self.RETRY_DELAY_SECS)
 
         raise ImageRequestError("Failed to retrieve image after retries")
+    
+    
+    async def get_image_async(self) -> BytesIO:
+        
+        retry_options = ExponentialRetry(
+            attempts=self.max_retries,
+            statuses={500, 502, 503, 504},
+            exceptions={aiohttp.ClientError, },
+        )
+        
+        payload = asdict(self.params)
+        payload["api_key"] = self.api_key
+
+        async with RetryClient(retry_options=retry_options) as session:
+            async with session.get(self.base_url, params=payload) as response:
+                if response.status != 200:
+                    raise ImageRequestError(f"Error fetching image: HTTP {response.status}")
+                
+                content = await response.read()
+                return BytesIO(content)
