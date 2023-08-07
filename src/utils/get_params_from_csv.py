@@ -11,6 +11,7 @@ class FieldInfo:
     params: NasaImageParameters
     bucket_path: str
 
+
 def parse_params_from_csv(csv_file_path: str) -> list[FieldInfo]:
     parsed_params = []
 

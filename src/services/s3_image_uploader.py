@@ -1,19 +1,51 @@
-from moto import mock_s3
+import os
 import boto3
 from aiobotocore.session import get_session
 from typing import BinaryIO
+from dotenv import load_dotenv
+
+load_dotenv()
+
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+BUCKET_NAME = os.getenv('BUCKET_NAME', "test-bucket") 
+REGION_NAME = os.getenv('REGION_NAME', "us-east-1")
 
 class S3ImageUploader:
-    def __init__(self, bucket_name: str, region_name: str) -> None:
-        self.bucket_name = bucket_name
-        self.region_name = region_name
-        self.s3 = boto3.client('s3', region_name=self.region_name)
+    def __init__(self) -> None:
+        self.s3 = boto3.client(
+            's3', 
+            region_name=REGION_NAME,
+            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+            aws_access_key_id=AWS_ACCESS_KEY_ID
+        )
 
     def upload_image(self, image_data: BinaryIO, file_path: str) -> None:
-        self.s3.upload_fileobj(image_data, self.bucket_name, file_path)
+        self.s3.upload_fileobj(image_data, BUCKET_NAME, file_path)
         
     async def upload_image_async(self, image_data: BinaryIO, file_path: str) -> None:
-        async_session = get_session()
-        async with async_session.create_client('s3') as s3:
-            s3.upload_fileobj(image_data, self.bucket_name, file_path)
+        session = get_session()
+        async with session.create_client(
+                's3',
+                region_name=REGION_NAME,
+                aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+                aws_access_key_id=AWS_ACCESS_KEY_ID,
+            ) as client:
+        
+            return await client.put_object(
+                Body=image_data, 
+                Bucket=BUCKET_NAME, 
+                Key=file_path
+            ) # type: ignore
+        
+            
+                
+                
+            
+            
+            
+            
+            
+        
+            
     

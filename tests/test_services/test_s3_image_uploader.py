@@ -5,7 +5,7 @@ import boto3
 from src.services.s3_image_uploader import S3ImageUploader
 
 class TestS3ImageUploader(unittest.TestCase):
-    BUCKET_NAME: str = 'test-bucket'
+    BUCKET_NAME: str = 'bucket-fields-imagery'
     REGION_NAME: str = 'us-east-1'
     
     @mock_s3
@@ -16,7 +16,7 @@ class TestS3ImageUploader(unittest.TestCase):
     def test_upload_image_to_s3(self) -> None:
         self.s3 = boto3.client('s3', region_name=self.REGION_NAME)
         self.s3.create_bucket(Bucket=self.BUCKET_NAME)
-        self.s3_uploader = S3ImageUploader(self.BUCKET_NAME, self.REGION_NAME)
+        self.s3_uploader = S3ImageUploader()
         
         binary_image_data = b'Simulated Binary Data'
         image_stream = BytesIO(binary_image_data)
