@@ -17,7 +17,7 @@ S3_MAX_CONNECTIONS = os.environ.get('S3_MAX_CONNECTIONS', 5)
 
 semaphore = asyncio.Semaphore(int(S3_MAX_CONNECTIONS))
 
-async def process_field_async(field):
+async def process_field_image_async(field):
     async with semaphore:
         try:
             nasa_downloader = NasaImageDownloader(field.params)
