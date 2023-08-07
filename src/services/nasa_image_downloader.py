@@ -7,10 +7,6 @@ from aiohttp_retry import RetryClient, ExponentialRetry
 from dataclasses import asdict, dataclass
 from datetime import datetime
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 @dataclass
 class NasaImageParameters:
     lat: float = 0.0
@@ -30,7 +26,7 @@ class NasaImageDownloader:
 
     def __init__(self, params: NasaImageParameters, api_key: str = "DEMO_KEY", max_retries: int = 3):
         self.api_key = api_key
-        self.base_url = os.getenv('NASA_EARTH_IMAGERY_API_URL', "")
+        self.base_url = os.environ.get('NASA_EARTH_IMAGERY_API_URL', "")
         self.params = params
         self.max_retries = max_retries
 

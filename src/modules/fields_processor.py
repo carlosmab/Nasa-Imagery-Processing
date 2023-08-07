@@ -11,14 +11,11 @@ import asyncio
 import os
 from src.services.s3_image_uploader import S3ImageUploader
 from src.services.nasa_image_downloader import ImageRequestError, NasaImageDownloader
-from dotenv import load_dotenv
 
-load_dotenv()
 
-S3_MAX_CONNECTIONS = os.getenv('S3_MAX_CONNECTIONS', 5)
+S3_MAX_CONNECTIONS = os.environ.get('S3_MAX_CONNECTIONS', 5)
 
 semaphore = asyncio.Semaphore(int(S3_MAX_CONNECTIONS))
-
 
 async def process_field_async(field):
     async with semaphore:

@@ -2,14 +2,11 @@ import os
 import boto3
 from aiobotocore.session import get_session
 from typing import BinaryIO
-from dotenv import load_dotenv
 
-load_dotenv()
-
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-BUCKET_NAME = os.getenv('BUCKET_NAME', "test-bucket") 
-REGION_NAME = os.getenv('REGION_NAME', "us-east-1")
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+BUCKET_NAME = os.environ.get('BUCKET_NAME', "test-bucket") 
+REGION_NAME = os.environ.get('REGION_NAME', "us-east-1")
 
 class S3ImageUploader:
     def __init__(self) -> None:
