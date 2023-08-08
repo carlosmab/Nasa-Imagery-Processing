@@ -1,0 +1,649 @@
+[
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "process_field_image_async",
+        "importPath": "src.modules.fields_image_processor",
+        "description": "src.modules.fields_image_processor",
+        "isExtraImport": true,
+        "detail": "src.modules.fields_image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "parse_params_from_csv",
+        "importPath": "src.utils.get_params_from_csv",
+        "description": "src.utils.get_params_from_csv",
+        "isExtraImport": true,
+        "detail": "src.utils.get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "FieldInfo",
+        "importPath": "src.utils.get_params_from_csv",
+        "description": "src.utils.get_params_from_csv",
+        "isExtraImport": true,
+        "detail": "src.utils.get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "parse_params_from_csv",
+        "importPath": "src.utils.get_params_from_csv",
+        "description": "src.utils.get_params_from_csv",
+        "isExtraImport": true,
+        "detail": "src.utils.get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "S3ImageUploader",
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "isExtraImport": true,
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "S3ImageUploader",
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "isExtraImport": true,
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "S3ImageUploader",
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "isExtraImport": true,
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "ImageRequestError",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageDownloader",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageParameters",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "ImageRequestError",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageDownloader",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageParameters",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "ImageRequestError",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageDownloader",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageParameters",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageParameters",
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "isExtraImport": true,
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "RetryClient",
+        "importPath": "aiohttp_retry",
+        "description": "aiohttp_retry",
+        "isExtraImport": true,
+        "detail": "aiohttp_retry",
+        "documentation": {}
+    },
+    {
+        "label": "ExponentialRetry",
+        "importPath": "aiohttp_retry",
+        "description": "aiohttp_retry",
+        "isExtraImport": true,
+        "detail": "aiohttp_retry",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "aiohttp_retry",
+        "description": "aiohttp_retry",
+        "isExtraImport": true,
+        "detail": "aiohttp_retry",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "aiobotocore.session",
+        "description": "aiobotocore.session",
+        "isExtraImport": true,
+        "detail": "aiobotocore.session",
+        "documentation": {}
+    },
+    {
+        "label": "BinaryIO",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "upload_fields_images_to_s3_async",
+        "importPath": "src.app.app",
+        "description": "src.app.app",
+        "isExtraImport": true,
+        "detail": "src.app.app",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "create_autospec",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncMock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "mock_s3",
+        "importPath": "moto",
+        "description": "moto",
+        "isExtraImport": true,
+        "detail": "moto",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "asynctest",
+        "description": "asynctest",
+        "isExtraImport": true,
+        "detail": "asynctest",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "asynctest.mock",
+        "description": "asynctest.mock",
+        "isExtraImport": true,
+        "detail": "asynctest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "pformat",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "jmespath",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "isExtraImport": true,
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "log_filename",
+        "kind": 5,
+        "importPath": "src.modules.fields_image_processor",
+        "description": "src.modules.fields_image_processor",
+        "peekOfCode": "log_filename = 'output.log'\nlogging.basicConfig(\n    filename=log_filename, \n    level=logging.INFO, \n    format='%(asctime)s - %(levelname)s - %(message)s'\n)\nimport asyncio\nimport os\nfrom src.services.s3_image_uploader import S3ImageUploader\nfrom src.services.nasa_image_downloader import ImageRequestError, NasaImageDownloader",
+        "detail": "src.modules.fields_image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "S3_MAX_CONNECTIONS",
+        "kind": 5,
+        "importPath": "src.modules.fields_image_processor",
+        "description": "src.modules.fields_image_processor",
+        "peekOfCode": "S3_MAX_CONNECTIONS = os.environ.get('S3_MAX_CONNECTIONS', 5)\nsemaphore = asyncio.Semaphore(int(S3_MAX_CONNECTIONS))\nasync def process_field_image_async(field):\n    async with semaphore:\n        try:\n            nasa_downloader = NasaImageDownloader(field.params)\n            image_stream = await nasa_downloader.get_image_async()\n            s3_uploader = S3ImageUploader()\n            await s3_uploader.upload_image_async(image_stream, field.bucket_path)\n            return f'Uploaded: {field.bucket_path}'",
+        "detail": "src.modules.fields_image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "semaphore",
+        "kind": 5,
+        "importPath": "src.modules.fields_image_processor",
+        "description": "src.modules.fields_image_processor",
+        "peekOfCode": "semaphore = asyncio.Semaphore(int(S3_MAX_CONNECTIONS))\nasync def process_field_image_async(field):\n    async with semaphore:\n        try:\n            nasa_downloader = NasaImageDownloader(field.params)\n            image_stream = await nasa_downloader.get_image_async()\n            s3_uploader = S3ImageUploader()\n            await s3_uploader.upload_image_async(image_stream, field.bucket_path)\n            return f'Uploaded: {field.bucket_path}'\n        except ImageRequestError as e:",
+        "detail": "src.modules.fields_image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageParameters",
+        "kind": 6,
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "peekOfCode": "class NasaImageParameters:\n    lat: float = 0.0\n    lon: float = 0.0\n    date: str = datetime.now().strftime(r'%Y-%m-%d')\n    dim: float = 0.15\nclass ImageRequestError(Exception):\n    def __init__(self, message=\"Image request failed\"):\n        self.message = message\n        super().__init__(self.message)\nclass NasaImageDownloader:",
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "ImageRequestError",
+        "kind": 6,
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "peekOfCode": "class ImageRequestError(Exception):\n    def __init__(self, message=\"Image request failed\"):\n        self.message = message\n        super().__init__(self.message)\nclass NasaImageDownloader:\n    RETRY_DELAY_SECS = 1\n    def __init__(self, params: NasaImageParameters, api_key: str = \"DEMO_KEY\", max_retries: int = 3):\n        self.api_key = api_key\n        self.base_url = os.environ.get('NASA_EARTH_IMAGERY_API_URL', \"\")\n        self.params = params",
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "NasaImageDownloader",
+        "kind": 6,
+        "importPath": "src.services.nasa_image_downloader",
+        "description": "src.services.nasa_image_downloader",
+        "peekOfCode": "class NasaImageDownloader:\n    RETRY_DELAY_SECS = 1\n    def __init__(self, params: NasaImageParameters, api_key: str = \"DEMO_KEY\", max_retries: int = 3):\n        self.api_key = api_key\n        self.base_url = os.environ.get('NASA_EARTH_IMAGERY_API_URL', \"\")\n        self.params = params\n        self.max_retries = max_retries\n    def get_image(self) -> BytesIO:\n        if not self.params.date:\n            self.params.date = datetime.now().strftime(r'%Y-%m-%d')",
+        "detail": "src.services.nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "S3ImageUploader",
+        "kind": 6,
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "peekOfCode": "class S3ImageUploader:\n    def __init__(self) -> None:\n        self.s3 = boto3.client(\n            's3', \n            region_name=REGION_NAME,\n            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,\n            aws_access_key_id=AWS_ACCESS_KEY_ID\n        )\n    def upload_image(self, image_data: BinaryIO, file_path: str) -> None:\n        self.s3.upload_fileobj(image_data, BUCKET_NAME, file_path)",
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_SECRET_ACCESS_KEY",
+        "kind": 5,
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "peekOfCode": "AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nBUCKET_NAME = os.environ.get('BUCKET_NAME', \"test-bucket\") \nREGION_NAME = os.environ.get('REGION_NAME', \"us-east-1\")\nclass S3ImageUploader:\n    def __init__(self) -> None:\n        self.s3 = boto3.client(\n            's3', \n            region_name=REGION_NAME,\n            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,",
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_ACCESS_KEY_ID",
+        "kind": 5,
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "peekOfCode": "AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nBUCKET_NAME = os.environ.get('BUCKET_NAME', \"test-bucket\") \nREGION_NAME = os.environ.get('REGION_NAME', \"us-east-1\")\nclass S3ImageUploader:\n    def __init__(self) -> None:\n        self.s3 = boto3.client(\n            's3', \n            region_name=REGION_NAME,\n            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,\n            aws_access_key_id=AWS_ACCESS_KEY_ID",
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "BUCKET_NAME",
+        "kind": 5,
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "peekOfCode": "BUCKET_NAME = os.environ.get('BUCKET_NAME', \"test-bucket\") \nREGION_NAME = os.environ.get('REGION_NAME', \"us-east-1\")\nclass S3ImageUploader:\n    def __init__(self) -> None:\n        self.s3 = boto3.client(\n            's3', \n            region_name=REGION_NAME,\n            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,\n            aws_access_key_id=AWS_ACCESS_KEY_ID\n        )",
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "REGION_NAME",
+        "kind": 5,
+        "importPath": "src.services.s3_image_uploader",
+        "description": "src.services.s3_image_uploader",
+        "peekOfCode": "REGION_NAME = os.environ.get('REGION_NAME', \"us-east-1\")\nclass S3ImageUploader:\n    def __init__(self) -> None:\n        self.s3 = boto3.client(\n            's3', \n            region_name=REGION_NAME,\n            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,\n            aws_access_key_id=AWS_ACCESS_KEY_ID\n        )\n    def upload_image(self, image_data: BinaryIO, file_path: str) -> None:",
+        "detail": "src.services.s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "FieldInfo",
+        "kind": 6,
+        "importPath": "src.utils.get_params_from_csv",
+        "description": "src.utils.get_params_from_csv",
+        "peekOfCode": "class FieldInfo:\n    field_id: str\n    params: NasaImageParameters\n    bucket_path: str\ndef parse_params_from_csv(csv_file_path: str) -> list[FieldInfo]:\n    parsed_params = []\n    with open(csv_file_path, 'r') as csv_file:\n        csv_reader = csv.DictReader(csv_file)\n        for row in csv_reader:\n            field_id = row['field_id']",
+        "detail": "src.utils.get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "parse_params_from_csv",
+        "kind": 2,
+        "importPath": "src.utils.get_params_from_csv",
+        "description": "src.utils.get_params_from_csv",
+        "peekOfCode": "def parse_params_from_csv(csv_file_path: str) -> list[FieldInfo]:\n    parsed_params = []\n    with open(csv_file_path, 'r') as csv_file:\n        csv_reader = csv.DictReader(csv_file)\n        for row in csv_reader:\n            field_id = row['field_id']\n            lon = float(row['lon'])\n            lat = float(row['lat'])\n            dim = float(row['dim'])\n            params = NasaImageParameters(lat=lat, lon=lon, dim=dim)",
+        "detail": "src.utils.get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "TestNasaImageDownloader",
+        "kind": 6,
+        "importPath": "tests.test_services.test_nasa_image_downloader",
+        "description": "tests.test_services.test_nasa_image_downloader",
+        "peekOfCode": "class TestNasaImageDownloader(unittest.TestCase):\n    @patch('requests.get')\n    def test_get_image_returns_stream_data(self, mock_get):\n        mock_response = Mock()\n        mock_response.content = b'Simulated Binary Data'\n        mock_get.return_value = mock_response\n        params = NasaImageParameters(lat=40.7128, lon=-74.0060)\n        nasa_downloader = NasaImageDownloader(params)\n        image_stream = nasa_downloader.get_image()\n        expected_content = b'Simulated Binary Data'",
+        "detail": "tests.test_services.test_nasa_image_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "TestAsyncNasaImageDownloader",
+        "kind": 6,
+        "importPath": "tests.test_services.test_nasa_image_downloader_async",
+        "description": "tests.test_services.test_nasa_image_downloader_async",
+        "peekOfCode": "class TestAsyncNasaImageDownloader(TestCase):\n    @patch('aiohttp_retry.RetryClient.get')\n    async def test_async_get_image_returns_stream_data(self, mock_retry_get: AsyncMock):\n        async def mock_response(*args, **kwargs):\n            response =  AsyncMock()\n            response.status = 200\n            response.read.return_value = b'Simulated Image Data'\n            return response\n        mock_retry_get.side_effect = mock_response\n        params = NasaImageParameters(lat=40.7128, lon=-74.0060)",
+        "detail": "tests.test_services.test_nasa_image_downloader_async",
+        "documentation": {}
+    },
+    {
+        "label": "TestS3ImageUploader",
+        "kind": 6,
+        "importPath": "tests.test_services.test_s3_image_uploader",
+        "description": "tests.test_services.test_s3_image_uploader",
+        "peekOfCode": "class TestS3ImageUploader(unittest.TestCase):\n    BUCKET_NAME: str = 'bucket-fields-imagery'\n    REGION_NAME: str = 'us-east-1'\n    @mock_s3\n    def setUp(self) -> None:\n        ...\n    @mock_s3\n    def test_upload_image_to_s3(self) -> None:\n        self.s3 = boto3.client('s3', region_name=self.REGION_NAME)\n        self.s3.create_bucket(Bucket=self.BUCKET_NAME)",
+        "detail": "tests.test_services.test_s3_image_uploader",
+        "documentation": {}
+    },
+    {
+        "label": "TestS3ImageUploaderAsync",
+        "kind": 6,
+        "importPath": "tests.test_services.test_s3_image_uploader_async",
+        "description": "tests.test_services.test_s3_image_uploader_async",
+        "peekOfCode": "class TestS3ImageUploaderAsync(TestCase):\n    @patch('aiobotocore.client.AioBaseClient._make_api_call')\n    async def test_upload_image_to_s3_async(self, mock_make_api_call):\n        bucket_name = 'bucket-fields-imagery'\n        image_stream = BytesIO(b'Simulated Binary Data')\n        expected_call = {\n            \"Bucket\": bucket_name,\n            \"Key\": \"dir/image.png\",\n            \"Body\": image_stream,\n        }",
+        "detail": "tests.test_services.test_s3_image_uploader_async",
+        "documentation": {}
+    },
+    {
+        "label": "TestCSVParser",
+        "kind": 6,
+        "importPath": "tests.test_unit.test_get_params_from_csv",
+        "description": "tests.test_unit.test_get_params_from_csv",
+        "peekOfCode": "class TestCSVParser(unittest.TestCase):\n    @patch('builtins.open')\n    @patch('csv.DictReader')\n    def test_read_csv_and_parse_params(self, mock_csv_reader, mock_open):\n        csv_content = [\n            {'field_id': 'field1', 'lon': '10.0', 'lat': '20.0', 'dim': '0.1'},\n            {'field_id': 'field2', 'lon': '15.0', 'lat': '25.0', 'dim': '0.2'},\n        ]\n        mock_csv_reader.return_value.__iter__.return_value = csv_content\n        parsed_params = parse_params_from_csv('test.csv')",
+        "detail": "tests.test_unit.test_get_params_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "venv.Scripts.jp",
+        "description": "venv.Scripts.jp",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('expression')\n    parser.add_argument('-f', '--filename',\n                        help=('The filename containing the input data.  '\n                              'If a filename is not given then data is '\n                              'read from stdin.'))\n    parser.add_argument('--ast', action='store_true',\n                        help=('Pretty print the AST, do not search the data.'))\n    args = parser.parse_args()",
+        "detail": "venv.Scripts.jp",
+        "documentation": {}
+    }
+]
